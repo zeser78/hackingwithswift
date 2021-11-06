@@ -11,6 +11,7 @@
 		49E106842735A09600666D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E106832735A09600666D91 /* ContentView.swift */; };
 		49E106862735A09700666D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E106852735A09700666D91 /* Assets.xcassets */; };
 		49E106892735A09700666D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E106882735A09700666D91 /* Preview Assets.xcassets */; };
+		49E106922736C13700666D91 /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 49E106912736C13700666D91 /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		49E106832735A09600666D91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49E106852735A09700666D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49E106882735A09700666D91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49E106912736C13700666D91 /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				49E106812735A09600666D91 /* HackingWithSwiftUIApp.swift */,
 				49E106832735A09600666D91 /* ContentView.swift */,
+				49E106912736C13700666D91 /* SleepCalculator.mlmodel */,
 				49E106852735A09700666D91 /* Assets.xcassets */,
 				49E106872735A09700666D91 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E106922736C13700666D91 /* SleepCalculator.mlmodel in Sources */,
 				49E106842735A09600666D91 /* ContentView.swift in Sources */,
 				49E106822735A09600666D91 /* HackingWithSwiftUIApp.swift in Sources */,
 			);
