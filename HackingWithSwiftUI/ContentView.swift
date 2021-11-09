@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var sleepAmount = 8.0
-    @State private var wakeUp = Date.now
+    @State private var wakeUp = defaultWakeTime
     @State private var coffeAmount = 1
     
     @State private var alertTitle = ""
@@ -17,23 +17,37 @@ struct ContentView: View {
     @State private var showingAlert = false
     @State private var rawData = Date.now
     
+    static var defaultWakeTime: Date {
+        var components = DateComponents()
+        components.hour = 7
+        components.minute = 0
+        return Calendar.current.date(from: components) ?? Date.now
+        
+    }
+    
     var body: some View {
         NavigationView {
-            VStack {
-                Text("When do you want to wake up")
-                    .font(.headline)
-                DatePicker("please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
-                    .labelsHidden()
+            Form {
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("When do you want to wake up")
+                        .font(.headline)
+                    DatePicker("please enter a date", selection: $wakeUp, displayedComponents: .hourAndMinute)
+                        .labelsHidden()
+                }
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Desire time to sleep")
+                        .font(.headline)
+                    
+                    Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
+                }
                 
-                Text("Desire time to sleep")
-                    .font(.headline)
                 
-                Stepper("\(sleepAmount.formatted()) hours", value: $sleepAmount, in: 4...12, step: 0.25)
-                
-                Text("Daily coffe intake")
-                    .font(.headline)
-                
-                Stepper(coffeAmount == 1 ? "1 cup" : "\(coffeAmount) cups", value: $coffeAmount, in: 1...20)
+                VStack(alignment: .leading, spacing: 0) {
+                    Text("Daily coffe intake")
+                        .font(.headline)
+                    
+                    Stepper(coffeAmount == 1 ? "1 cup" : "\(coffeAmount) cups", value: $coffeAmount, in: 1...20)
+                }
             }
             .navigationTitle("BetterRest")
             .toolbar {
