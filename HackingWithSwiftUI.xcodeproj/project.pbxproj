@@ -11,6 +11,12 @@
 		49E106842735A09600666D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E106832735A09600666D91 /* ContentView.swift */; };
 		49E106862735A09700666D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E106852735A09700666D91 /* Assets.xcassets */; };
 		49E106892735A09700666D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49E106882735A09700666D91 /* Preview Assets.xcassets */; };
+		49E10696273D643500666D91 /* ExpenseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E10695273D643500666D91 /* ExpenseItem.swift */; };
+		49E10698273D649600666D91 /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E10697273D649600666D91 /* Expenses.swift */; };
+		49E1069A273D6BE800666D91 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E10699273D6BE800666D91 /* AddView.swift */; };
+		49E1069C273D978C00666D91 /* FormatStyle-LocalCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1069B273D978C00666D91 /* FormatStyle-LocalCurrency.swift */; };
+		49E1069E273D98D200666D91 /* View-ExpenseStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1069D273D98D200666D91 /* View-ExpenseStyling.swift */; };
+		49E106A0273DA23800666D91 /* ExpenseSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E1069F273DA23800666D91 /* ExpenseSection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		49E106832735A09600666D91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49E106852735A09700666D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49E106882735A09700666D91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		49E10695273D643500666D91 /* ExpenseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseItem.swift; sourceTree = "<group>"; };
+		49E10697273D649600666D91 /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
+		49E10699273D6BE800666D91 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		49E1069B273D978C00666D91 /* FormatStyle-LocalCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FormatStyle-LocalCurrency.swift"; sourceTree = "<group>"; };
+		49E1069D273D98D200666D91 /* View-ExpenseStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View-ExpenseStyling.swift"; sourceTree = "<group>"; };
+		49E1069F273DA23800666D91 /* ExpenseSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseSection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +65,12 @@
 			children = (
 				49E106812735A09600666D91 /* HackingWithSwiftUIApp.swift */,
 				49E106832735A09600666D91 /* ContentView.swift */,
+				49E1069F273DA23800666D91 /* ExpenseSection.swift */,
+				49E1069B273D978C00666D91 /* FormatStyle-LocalCurrency.swift */,
+				49E10699273D6BE800666D91 /* AddView.swift */,
+				49E1069D273D98D200666D91 /* View-ExpenseStyling.swift */,
+				49E10695273D643500666D91 /* ExpenseItem.swift */,
+				49E10697273D649600666D91 /* Expenses.swift */,
 				49E106852735A09700666D91 /* Assets.xcassets */,
 				49E106872735A09700666D91 /* Preview Content */,
 			);
@@ -137,7 +155,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E10698273D649600666D91 /* Expenses.swift in Sources */,
 				49E106842735A09600666D91 /* ContentView.swift in Sources */,
+				49E1069A273D6BE800666D91 /* AddView.swift in Sources */,
+				49E1069E273D98D200666D91 /* View-ExpenseStyling.swift in Sources */,
+				49E106A0273DA23800666D91 /* ExpenseSection.swift in Sources */,
+				49E1069C273D978C00666D91 /* FormatStyle-LocalCurrency.swift in Sources */,
+				49E10696273D643500666D91 /* ExpenseItem.swift in Sources */,
 				49E106822735A09600666D91 /* HackingWithSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
